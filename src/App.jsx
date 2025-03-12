@@ -1,20 +1,13 @@
-import { useState } from 'react'
-import './index.css'
+import React from "react";
+import My_todo_list from "./My_todo_list";
 
-function App() {
-  const [count, setCount] = useState(0)
+const App = () => {
+  return (
+    <div>
+      <My_todo_list />
+    </div>
+  );
+};
 
-  return ( 
-      <div >
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
+export default App;
 
-        <h1 className="text-3xl font-bold underline">
-      Hello world!
-    </h1>
-      </div>
-  )
-}
-
-export default App
